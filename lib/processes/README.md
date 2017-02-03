@@ -1,19 +1,18 @@
 # Processes
 
-**TODO: Add description**
+A Ping Pong demonstration of elixir OTP
 
-## Installation
+## Start the IEx session:
+'''bash
+  $ iex -S mix
+'''
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `processes` to your list of dependencies in `mix.exs`:
+## Run the ping pong processes:
+'''elixir
+  iex(1)> Processes.PingWorker.start_a_fight
+'''
 
-```elixir
-def deps do
-  [{:processes, "~> 0.1.0"}]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/processes](https://hexdocs.pm/processes).
-
+## Optional, look at the live view of the Sup. Tree:
+'''elixir
+  iex(2)> :observer.start
+'''
